@@ -1,0 +1,14 @@
+{% extends 'store/base.html' %}
+
+{% block title %}Об авторе{% endblock %}
+
+{% block content %}
+<h1>Информация об авторе</h1>
+<div class="author-info">
+    <p><strong>Имя:</strong> {{ name }}</p>
+    <p><strong>Группа:</strong> {{ group }}</p>
+    <p><strong>Курс:</strong> {{ course }}</p>
+</div>
+<h2>О проекте:</h2>
+<p>Этот интернет-магазин был разработан в рамках учебного проекта по изучению Django.</p>
+{% endblock %}
