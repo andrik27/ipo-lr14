@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Главная</a>
+        <a href="{% url 'about' %}">О магазине</a>
+        <a href="{% url 'author' %}">Об авторе</a>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
